@@ -12,6 +12,6 @@ public class Coin : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Destroy(this.gameObject);
-        GameManager gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+        GameController gc = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
 }

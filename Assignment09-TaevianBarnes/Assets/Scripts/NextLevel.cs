@@ -6,6 +6,6 @@ public class NextLevel : MonoBehaviour
 {
     void OnTriggerEnter()
     {
-        GameManager gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-        gm.NextLevel();    }
+        GameController gc = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        gc.NextLevel();    }
 }

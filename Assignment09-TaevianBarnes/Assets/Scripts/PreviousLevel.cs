@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PreviousLevel : MonoBehaviour
 {
-    void ONTriggerEnter()
+    void OnTriggerEnter()
     {
-        GameManager gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-        gm.PreviousLevel();
+        GameController gc = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        gc.PreviousLevel();
     }
 
 }
