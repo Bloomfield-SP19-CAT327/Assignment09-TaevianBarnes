@@ -13,5 +13,6 @@ public class Coin : MonoBehaviour
     {
         Destroy(this.gameObject);
         GameController gc = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        gc.GetItem();
     }
 }

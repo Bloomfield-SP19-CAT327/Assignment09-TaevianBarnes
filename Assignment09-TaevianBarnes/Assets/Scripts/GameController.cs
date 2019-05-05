@@ -47,6 +47,8 @@ public class GameController : MonoBehaviour
         hudInfo += "Level: " + (gameStats.level + 1) + "\n";
         hudInfo += "Score: " + gameStats.pickUps + "\n";
         hudInfo += "Time: " + gameStats.gameTime.ToString("F2");
+
+        text.text = hudInfo;
     }
 
     void NewGame()
